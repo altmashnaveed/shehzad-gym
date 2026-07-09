@@ -1,0 +1,90 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { 
+	title = "Shahzad Fitness Gym - Sargodha's Premier Gym", 
+	description = "Join Shahzad Fitness Gym at Factory Area Chowk, Sargodha. Expert training by Mr. Sargodha Malik Shahzad Ahmed. Cardio, strength training, diet plans, and supplements." 
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<!-- SEO Meta Tags -->
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		
+		<!-- Local Business SEO Schema -->
+		<script type="application/ld+json" is:raw>
+			{
+				"@context": "https://schema.org",
+				"@type": "ExerciseGym",
+				"name": "Shahzad Fitness Gym",
+				"image": "https://sfg-sargodha.com/malik-shehzad-hero-bg.png",
+				"logo": "https://sfg-sargodha.com/logo.png",
+				"url": "https://sfg-sargodha.com",
+				"telephone": "+923003526215",
+				"priceRange": "$$",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Factory Area Chowk",
+					"addressLocality": "Sargodha",
+					"addressRegion": "Punjab",
+					"postalCode": "40100",
+					"addressCountry": "PK"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": 32.0776043,
+					"longitude": 72.6587171
+				},
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+						"opens": "04:00",
+						"closes": "22:00"
+					}
+				],
+				"sameAs": [
+					"https://maps.app.goo.gl/qVND2SdAUeg7mfEL6?g_st=aw",
+					"https://www.youtube.com/@file:",
+					"https://www.facebook.com/people/Shahzad-Fitness-GYM/100046479386739/"
+				]
+			}
+		</script>
+		
+		<!-- Google Fonts: Outfit -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+		
+		<style>
+			body {
+				font-family: 'Outfit', sans-serif;
+			}
+		</style>
+	</head>
+	<body class="bg-zinc-950 text-zinc-100 min-h-screen flex flex-col antialiased selection:bg-yellow-400 selection:text-black">
+		<Header />
+		<main class="flex-grow pt-20">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

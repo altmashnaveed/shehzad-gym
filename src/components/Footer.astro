@@ -1,0 +1,110 @@
+---
+import { Dumbbell, Phone, MapPin, MessageCircle, Calendar } from '@lucide/astro';
+---
+
+<footer class="bg-zinc-950 text-zinc-400 border-t border-zinc-900 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      
+      <!-- Gym Intro Column -->
+      <div class="space-y-4">
+        <a href="#" class="inline-block group">
+          <img src="/logo.png" alt="Shahzad Fitness Gym Logo" class="h-20 w-auto object-contain" />
+        </a>
+        <p class="text-sm text-zinc-500 font-light leading-relaxed">
+          Sargodha's premier fitness training facility. Empowering members to reach their peak physical potentials under the guidance of Mr. Sargodha Malik Shahzad Ahmed.
+        </p>
+        <div class="flex items-center gap-3 pt-2">
+          <a href="https://www.facebook.com/people/Shahzad-Fitness-GYM/100046479386739/" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-zinc-900 border border-zinc-800 hover:border-yellow-400 text-zinc-400 hover:text-yellow-400 flex items-center justify-center transition-all duration-300">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/923003526215" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-zinc-900 border border-zinc-800 hover:border-emerald-500 text-zinc-400 hover:text-emerald-400 flex items-center justify-center transition-all duration-300" aria-label="WhatsApp">
+            <MessageCircle class="w-4 h-4" />
+          </a>
+          <a href="https://www.youtube.com/@file:" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-zinc-900 border border-zinc-800 hover:border-red-600 text-zinc-400 hover:text-red-500 flex items-center justify-center transition-all duration-300" aria-label="YouTube">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.53 3.5 12 3.5 12 3.5s-7.53 0-9.388.555A3.002 3.002 0 0 0 .502 6.163C0 8.07 0 12 0 12s0 3.93.502 5.837a3.003 3.003 0 0 0 2.11 2.108C4.47 20.5 12 20.5 12 20.5s7.53 0 9.388-.555a3.002 3.002 0 0 0 2.11-2.108C24 15.93 24 12 24 12s0-3.93-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links Column -->
+      <div>
+        <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-5">Quick Links</h3>
+        <ul class="space-y-3 text-sm">
+          <li>
+            <a href="#about" class="hover:text-yellow-400 transition-colors duration-200">About Trainer</a>
+          </li>
+          <li>
+            <a href="#services" class="hover:text-yellow-400 transition-colors duration-200">Services & Programs</a>
+          </li>
+          <li>
+            <a href="#timings" class="hover:text-yellow-400 transition-colors duration-200">Timing Schedule</a>
+          </li>
+          <li>
+            <a href="#pricing" class="hover:text-yellow-400 transition-colors duration-200">Membership Fees</a>
+          </li>
+          <li>
+            <a href="#gallery" class="hover:text-yellow-400 transition-colors duration-200">Photo Gallery</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Schedule Column -->
+      <div>
+        <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-5">Gym Timings</h3>
+        <ul class="space-y-4 text-sm">
+          <li class="flex items-start gap-3">
+            <Calendar class="w-4 h-4 text-yellow-400 shrink-0 mt-0.5" />
+            <div>
+              <p class="text-white font-semibold">Ladies Session</p>
+              <p class="text-zinc-500 text-xs mt-0.5">8:00 AM - 12:00 PM</p>
+              <p class="text-zinc-600 text-[10px] mt-0.5 uppercase tracking-wider">Sat - Thu (Fri Rest Day)</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <Calendar class="w-4 h-4 text-yellow-400 shrink-0 mt-0.5" />
+            <div>
+              <p class="text-white font-semibold">Gents Session</p>
+              <p class="text-zinc-500 text-xs mt-0.5">4:00 PM - 10:00 PM</p>
+              <p class="text-zinc-600 text-[10px] mt-0.5 uppercase tracking-wider">Sat - Thu (Fri Rest Day)</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Info Column -->
+      <div>
+        <h3 class="text-white text-sm font-bold uppercase tracking-wider mb-5">Find Us</h3>
+        <ul class="space-y-4 text-sm">
+          <li class="flex items-start gap-3">
+            <MapPin class="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
+            <a href="https://www.google.com/maps/place/Shahzad+Fitness+Gym/@32.0776043,72.6587171,17z" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-400 transition-colors duration-200 leading-relaxed">
+              Factory Area Chowk,<br />Sargodha, Punjab, Pakistan
+            </a>
+          </li>
+          <li class="flex items-center gap-3">
+            <Phone class="w-4 h-4 text-yellow-400 shrink-0" />
+            <a href="tel:+923003526215" class="hover:text-yellow-400 transition-colors duration-200 font-semibold text-white">
+              +92 300 3526215
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-zinc-900 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-zinc-600">
+        &copy; {new Date().getFullYear()} Shahzad Fitness Gym. All rights reserved.
+      </p>
+      <p class="text-xs text-zinc-600 flex items-center gap-1">
+        Designed with passion for <span class="text-yellow-400">Titan Fitness</span>
+      </p>
+    </div>
+  </div>
+</footer>
