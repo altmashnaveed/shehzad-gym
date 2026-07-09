@@ -232,7 +232,7 @@ const reviews = [
 		</div>
 	</section>
 
-	<!-- Timings & Pricing Section -->
+	<!-- Timings Section -->
 	<section id="timings" class="py-24 bg-[#050505] relative scroll-mt-20">
 		<!-- Decorative Radial Glow -->
 		<div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(250,204,21,0.02)_0,transparent_50%)]"></div>
@@ -241,10 +241,146 @@ const reviews = [
 			
 			<!-- Section Header -->
 			<div class="text-center space-y-4 mb-16">
-				<span class="text-sm font-bold text-yellow-400 uppercase tracking-widest block">Membership Packages</span>
-				<h2 class="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight">Schedules & Pricing</h2>
+				<span class="text-sm font-bold text-yellow-400 uppercase tracking-widest block">Gym Schedule</span>
+				<h2 class="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight">Session Hours</h2>
 				<p class="text-zinc-500 text-sm sm:text-base max-w-lg mx-auto font-light">
-					Choose the perfect plan to hit your body goals. Switch between Gents and Ladies schedules below.
+					We run dedicated sessions for Gents and Ladies. Both sessions operate 6 days a week (Saturday to Thursday) with Friday as our weekly rest day.
+				</p>
+			</div>
+
+			<!-- Grid layout for Timings -->
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+				
+				<!-- Gents timings Card -->
+				<div class="group relative rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900/20 backdrop-blur-md hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between">
+					
+					<!-- Top visual with graphic -->
+					<div class="relative h-[240px] overflow-hidden">
+						<img 
+							src="/male-trainer-timing.png" 
+							alt="Male student training at Shahzad Fitness Gym" 
+							class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+						/>
+						<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent"></div>
+						
+						<!-- Header overlay -->
+						<div class="absolute bottom-4 left-6 flex items-center gap-3">
+							<div class="w-10 h-10 rounded-xl bg-yellow-400 text-zinc-950 flex items-center justify-center font-black">
+								♂
+							</div>
+							<div>
+								<h3 class="text-white text-xl font-black uppercase tracking-tight">Gents Session</h3>
+								<p class="text-yellow-400 text-xs font-semibold">Saturday to Thursday</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Bottom content with large timing display -->
+					<div class="p-8 space-y-6 flex-grow flex flex-col justify-between">
+						<div class="space-y-4">
+							<div class="p-6 rounded-2xl bg-zinc-950/40 border border-zinc-900 text-center">
+								<p class="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-1">Workout Hours</p>
+								<p class="text-3xl sm:text-4xl font-black text-white tracking-tight">04:00 PM - 10:00 PM</p>
+							</div>
+							
+							<ul class="space-y-3 text-sm text-zinc-400">
+								<li class="flex items-center gap-3">
+									<svg class="w-4 h-4 text-yellow-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+									<span>Personal trainer assistance by Coach Shahzad</span>
+								</li>
+								<li class="flex items-center gap-3">
+									<svg class="w-4 h-4 text-yellow-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+									<span>Full cardio machinery and strength weights access</span>
+								</li>
+								<li class="flex items-center gap-3">
+									<svg class="w-4 h-4 text-yellow-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+									<span>Supplement store and progress audits open</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="pt-6">
+							<div class="text-center text-xs font-bold text-red-500 uppercase tracking-widest bg-red-500/10 border border-red-500/20 py-2 rounded-xl">
+								Friday is Rest Day
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Ladies timings Card -->
+				<div class="group relative rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900/20 backdrop-blur-md hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between">
+					
+					<!-- Top visual with graphic -->
+					<div class="relative h-[240px] overflow-hidden">
+						<img 
+							src="/female-trainer-timing.png" 
+							alt="Female student exercising at Shahzad Fitness Gym" 
+							class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+						/>
+						<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent"></div>
+						
+						<!-- Header overlay -->
+						<div class="absolute bottom-4 left-6 flex items-center gap-3">
+							<div class="w-10 h-10 rounded-xl bg-yellow-400 text-zinc-950 flex items-center justify-center font-black">
+								♀
+							</div>
+							<div>
+								<h3 class="text-white text-xl font-black uppercase tracking-tight">Ladies Session</h3>
+								<p class="text-yellow-400 text-xs font-semibold">Saturday to Thursday</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Bottom content with large timing display -->
+					<div class="p-8 space-y-6 flex-grow flex flex-col justify-between">
+						<div class="space-y-4">
+							<div class="p-6 rounded-2xl bg-zinc-950/40 border border-zinc-900 text-center">
+								<p class="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-1">Workout Hours</p>
+								<p class="text-3xl sm:text-4xl font-black text-white tracking-tight">08:00 AM - 12:00 PM</p>
+							</div>
+							
+							<ul class="space-y-3 text-sm text-zinc-400">
+								<li class="flex items-center gap-3">
+									<svg class="w-4 h-4 text-yellow-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+									<span>100% Private environment (only female members allowed)</span>
+								</li>
+								<li class="flex items-center gap-3">
+									<svg class="w-4 h-4 text-yellow-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+									<span>Complete treadmills, spin bikes, and core sections</span>
+								</li>
+								<li class="flex items-center gap-3">
+									<svg class="w-4 h-4 text-yellow-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+									<span>Secure entry with personal guidance from Coach Shahzad</span>
+								</li>
+							</ul>
+						</div>
+
+						<div class="pt-6">
+							<div class="text-center text-xs font-bold text-red-500 uppercase tracking-widest bg-red-500/10 border border-red-500/20 py-2 rounded-xl">
+								Friday is Rest Day
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Pricing Section -->
+	<section id="pricing" class="py-24 bg-[#0d0d0f] relative scroll-mt-20">
+		<!-- Decorative Radial Glow -->
+		<div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(250,204,21,0.02)_0,transparent_50%)]"></div>
+
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+			
+			<!-- Section Header -->
+			<div class="text-center space-y-4 mb-16">
+				<span class="text-sm font-bold text-yellow-400 uppercase tracking-widest block">Membership Packages</span>
+				<h2 class="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight">Affordable Pricing</h2>
+				<p class="text-zinc-500 text-sm sm:text-base max-w-lg mx-auto font-light">
+					Select Gents or Ladies below to view our standard gym access fees and personal coaching packages.
 				</p>
 
 				<!-- Toggle Tabs Switcher -->
@@ -270,33 +406,7 @@ const reviews = [
 
 			<!-- Gents Section Content -->
 			<div id="section-gents" class="space-y-12 block">
-				
-				<!-- Timing Banner -->
-				<div class="max-w-4xl mx-auto p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 backdrop-blur-sm flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left relative overflow-hidden group">
-					<!-- Background Watermark Graphic (Male Athlete) -->
-					<div class="absolute right-6 -bottom-4 opacity-[0.14] group-hover:opacity-[0.24] transition-opacity duration-500 pointer-events-none hidden sm:block">
-						<svg class="w-36 h-36 text-yellow-400 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-							<path d="M7.5 5.6C7.5 4 8.8 2.7 10.4 2.7S13.3 4 13.3 5.6s-1.3 2.9-2.9 2.9S7.5 7.2 7.5 5.6zm13.1 7.2c-.4-.4-1-.4-1.4 0l-2.4 2.4-3.1-6.2c-.3-.6-.9-.9-1.5-.9h-4.3c-.6 0-1.2.3-1.5.9L3.6 15.2l-2.4-2.4c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l3.5 3.5c.2.2.5.3.7.3h.1c.3 0 .6-.1.8-.3L8 14.5V21c0 .6.4 1 1 1h2.8c.6 0 1-.4 1-1v-4.5h.9V21c0 .6.4 1 1 1h2.8c.6 0 1-.4 1-1v-6.5l3.1 3.1c.2.2.5.3.7.3.3 0 .5-.1.7-.3.4-.4.4-1.1 0-1.5z"/>
-						</svg>
-					</div>
-					<div class="flex items-center gap-4 flex-col sm:flex-row relative z-10">
-						<div class="w-12 h-12 rounded-full bg-yellow-400/10 border border-yellow-400/20 text-yellow-400 flex items-center justify-center shrink-0">
-							<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-							</svg>
-						</div>
-						<div>
-							<h3 class="text-white font-bold text-lg uppercase leading-none">Gents Session Hours</h3>
-							<p class="text-zinc-500 text-sm mt-1">Available 6 days a week (Saturday to Thursday) | Friday Rest Day</p>
-						</div>
-					</div>
-					<div class="text-2xl font-black text-white bg-yellow-400/10 border border-yellow-400/20 px-6 py-2 rounded-xl">
-						04:00 PM - 10:00 PM
-					</div>
-				</div>
-
-				<!-- Gents Pricing Cards -->
-				<div id="pricing" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto scroll-mt-24">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 					
 					<!-- Casual Access -->
 					<div class="relative p-8 sm:p-10 rounded-3xl bg-zinc-900/60 border border-zinc-800 backdrop-blur-md flex flex-col justify-between hover:border-zinc-700 transition-all duration-300 group">
@@ -378,32 +488,6 @@ const reviews = [
 
 			<!-- Ladies Section Content -->
 			<div id="section-ladies" class="space-y-12 hidden">
-				
-				<!-- Timing Banner -->
-				<div class="max-w-4xl mx-auto p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 backdrop-blur-sm flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left relative overflow-hidden group">
-					<!-- Background Watermark Graphic (Female Athlete) -->
-					<div class="absolute right-6 -bottom-4 opacity-[0.14] group-hover:opacity-[0.24] transition-opacity duration-500 pointer-events-none hidden sm:block">
-						<svg class="w-36 h-36 text-yellow-400 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-							<path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.96 5c-.71-1.2-2.02-2-3.46-2-1.44 0-2.75.8-3.46 2L4.01 13.91c-.34.58-.15 1.33.43 1.67.58.34 1.33.15 1.67-.43L8 12.02V19c0 .55.45 1 1 1h1.5v3h3v-3H15c.55 0 1-.45 1-1v-6.98l1.89 3.13c.34.58 1.09.77 1.67.43.58-.34.77-1.09.43-1.67L14.96 7z"/>
-						</svg>
-					</div>
-					<div class="flex items-center gap-4 flex-col sm:flex-row relative z-10">
-						<div class="w-12 h-12 rounded-full bg-yellow-400/10 border border-yellow-400/20 text-yellow-400 flex items-center justify-center shrink-0">
-							<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-							</svg>
-						</div>
-						<div>
-							<h3 class="text-white font-bold text-lg uppercase leading-none">Ladies Session Hours</h3>
-							<p class="text-zinc-500 text-sm mt-1">Available 6 days a week (Saturday to Thursday) | Friday Rest Day</p>
-						</div>
-					</div>
-					<div class="text-2xl font-black text-white bg-yellow-400/10 border border-yellow-400/20 px-6 py-2 rounded-xl">
-						08:00 AM - 12:00 PM
-					</div>
-				</div>
-
-				<!-- Ladies Pricing Cards -->
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 					
 					<!-- Casual Access -->
@@ -484,74 +568,6 @@ const reviews = [
 				</div>
 			</div>
 
-		</div>
-	</section>
-
-	<!-- Timings Visual Showcase Section -->
-	<section class="py-24 bg-[#0d0d0f] relative">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-			
-			<!-- Section Header -->
-			<div class="text-center space-y-4 mb-16">
-				<span class="text-sm font-bold text-yellow-400 uppercase tracking-widest block">Atmosphere & Visuals</span>
-				<h2 class="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight">Dedicated Training Environments</h2>
-				<p class="text-zinc-500 text-sm sm:text-base max-w-lg mx-auto font-light">
-					Look inside our training spaces designed for maximum focus, safety, and performance.
-				</p>
-			</div>
-
-			<!-- Visual Cards Grid -->
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-				
-				<!-- Gents Training Vibe -->
-				<div class="group relative rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-950/40 backdrop-blur-sm hover:border-zinc-700 transition-all duration-300 flex flex-col">
-					<div class="relative h-[300px] overflow-hidden">
-						<!-- Image -->
-						<img 
-							src="/male-trainer-timing.png" 
-							alt="Gents Session training atmosphere at Shahzad Fitness Gym" 
-							class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-						/>
-						<!-- Dark top overlay -->
-						<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent"></div>
-						<!-- Timing tag overlay -->
-						<div class="absolute top-4 left-4 px-4 py-1.5 rounded-full bg-yellow-400 text-zinc-950 text-xs font-black uppercase tracking-wider shadow-lg">
-							Gents Timing: 04:00 PM - 10:00 PM
-						</div>
-					</div>
-					<div class="p-8 space-y-3">
-						<h3 class="text-white text-xl font-bold uppercase tracking-tight">Gents Workout Powerhouse</h3>
-						<p class="text-zinc-400 text-sm font-light leading-relaxed">
-							A high-intensity bodybuilding setup featuring imported plate-loaded selectorized weight stacks, multiple heavy duty squat racks, flat/incline benches, and commercial cardio treadmills.
-						</p>
-					</div>
-				</div>
-
-				<!-- Ladies Training Vibe -->
-				<div class="group relative rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-950/40 backdrop-blur-sm hover:border-zinc-700 transition-all duration-300 flex flex-col">
-					<div class="relative h-[300px] overflow-hidden">
-						<!-- Image -->
-						<img 
-							src="/female-trainer-timing.png" 
-							alt="Ladies Session training atmosphere at Shahzad Fitness Gym" 
-							class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-						/>
-						<!-- Dark top overlay -->
-						<div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent"></div>
-						<!-- Timing tag overlay -->
-						<div class="absolute top-4 left-4 px-4 py-1.5 rounded-full bg-yellow-400 text-zinc-950 text-xs font-black uppercase tracking-wider shadow-lg">
-							Ladies Timing: 08:00 AM - 12:00 PM
-						</div>
-					</div>
-					<div class="p-8 space-y-3">
-						<h3 class="text-white text-xl font-bold uppercase tracking-tight">Private Ladies Fitness Zone</h3>
-						<p class="text-zinc-400 text-sm font-light leading-relaxed">
-							A fully secure, private environment dedicated exclusively to female fitness. Equipped with full treadmill lines, spin bikes, customized toning weights, and floor-core exercises under Coach Shahzad's custom diets.
-						</p>
-					</div>
-				</div>
-
-			</div>
 		</div>
 	</section>
 
