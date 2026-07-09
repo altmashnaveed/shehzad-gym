@@ -8,6 +8,9 @@ import { Dumbbell, Menu, X } from '@lucide/astro';
       
       <!-- Logo -->
       <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-yellow-400 flex items-center justify-center group-hover:bg-white transition-colors duration-300">
+          <Dumbbell class="w-5 h-5 text-zinc-950" />
+        </div>
         <div class="flex flex-col">
           <span class="text-xl font-black tracking-tight text-white uppercase leading-none group-hover:text-yellow-400 transition-colors duration-300">
             Shahzad<span class="text-yellow-400 group-hover:text-white transition-colors duration-300">Fitness</span>
@@ -19,18 +22,18 @@ import { Dumbbell, Menu, X } from '@lucide/astro';
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-8">
-        <a href="#about" class="text-sm font-medium text-zinc-300 hover:text-yellow-400 transition-colors duration-200">Trainer</a>
-        <a href="#services" class="text-sm font-medium text-zinc-300 hover:text-yellow-400 transition-colors duration-200">Services</a>
-        <a href="#timings" class="text-sm font-medium text-zinc-300 hover:text-yellow-400 transition-colors duration-200">Schedule</a>
-        <a href="#pricing" class="text-sm font-medium text-zinc-300 hover:text-yellow-400 transition-colors duration-200">Pricing</a>
-        <a href="#gallery" class="text-sm font-medium text-zinc-300 hover:text-yellow-400 transition-colors duration-200">Gallery</a>
-        <a href="#contact" class="text-sm font-medium text-zinc-300 hover:text-yellow-400 transition-colors duration-200">Contact</a>
+      <nav class="hidden md:flex items-center gap-8" id="desktop-nav">
+        <a href="#about" class="nav-link relative text-xs font-bold uppercase tracking-wider text-zinc-300 hover:text-yellow-400 transition-all duration-300 py-1">Trainer</a>
+        <a href="#timings" class="nav-link relative text-xs font-bold uppercase tracking-wider text-zinc-300 hover:text-yellow-400 transition-all duration-300 py-1">Schedule</a>
+        <a href="#pricing" class="nav-link relative text-xs font-bold uppercase tracking-wider text-zinc-300 hover:text-yellow-400 transition-all duration-300 py-1">Pricing</a>
+        <a href="#services" class="nav-link relative text-xs font-bold uppercase tracking-wider text-zinc-300 hover:text-yellow-400 transition-all duration-300 py-1">Services</a>
+        <a href="#reviews" class="nav-link relative text-xs font-bold uppercase tracking-wider text-zinc-300 hover:text-yellow-400 transition-all duration-300 py-1">Reviews</a>
+        <a href="#faq" class="nav-link relative text-xs font-bold uppercase tracking-wider text-zinc-300 hover:text-yellow-400 transition-all duration-300 py-1">FAQ</a>
       </nav>
 
       <!-- Desktop CTA -->
       <div class="hidden md:flex items-center gap-4">
-        <a href="tel:+923003526215" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-black bg-yellow-400 hover:bg-yellow-300 rounded-full transition-all duration-300 shadow-lg shadow-yellow-400/10 hover:shadow-yellow-400/20 hover:scale-[1.03]">
+        <a href="#contact" class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-black bg-yellow-400 hover:bg-yellow-300 rounded-full transition-all duration-300 shadow-lg shadow-yellow-400/10 hover:shadow-yellow-400/20 hover:scale-[1.03]">
           Join Now
         </a>
       </div>
@@ -50,14 +53,14 @@ import { Dumbbell, Menu, X } from '@lucide/astro';
   <!-- Mobile Menu -->
   <div class="hidden md:hidden bg-zinc-950 border-b border-zinc-900" id="mobile-menu">
     <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
-      <a href="#about" class="block px-3 py-3 rounded-md text-base font-semibold text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900 transition-all">Trainer</a>
-      <a href="#services" class="block px-3 py-3 rounded-md text-base font-semibold text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900 transition-all">Services</a>
-      <a href="#timings" class="block px-3 py-3 rounded-md text-base font-semibold text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900 transition-all">Schedule</a>
-      <a href="#pricing" class="block px-3 py-3 rounded-md text-base font-semibold text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900 transition-all">Pricing</a>
-      <a href="#gallery" class="block px-3 py-3 rounded-md text-base font-semibold text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900 transition-all">Gallery</a>
-      <a href="#contact" class="block px-3 py-3 rounded-md text-base font-semibold text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900 transition-all">Contact</a>
+      <a href="#about" class="block px-3 py-3 rounded-md text-base font-bold uppercase tracking-wider text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900 transition-all">Trainer</a>
+      <a href="#timings" class="block px-3 py-3 rounded-md text-base font-bold uppercase tracking-wider text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900 transition-all">Schedule</a>
+      <a href="#pricing" class="block px-3 py-3 rounded-md text-base font-bold uppercase tracking-wider text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900 transition-all">Pricing</a>
+      <a href="#services" class="block px-3 py-3 rounded-md text-base font-bold uppercase tracking-wider text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900 transition-all">Services</a>
+      <a href="#reviews" class="block px-3 py-3 rounded-md text-base font-bold uppercase tracking-wider text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900 transition-all">Reviews</a>
+      <a href="#faq" class="block px-3 py-3 rounded-md text-base font-bold uppercase tracking-wider text-zinc-300 hover:text-yellow-400 hover:bg-zinc-900 transition-all">FAQ</a>
       <div class="pt-4 pb-2 px-3">
-        <a href="tel:+923003526215" class="w-full flex items-center justify-center px-6 py-3 text-base font-bold text-black bg-yellow-400 rounded-full shadow-lg shadow-yellow-400/10">
+        <a href="#contact" class="w-full flex items-center justify-center px-6 py-3 text-base font-bold text-black bg-yellow-400 rounded-full shadow-lg shadow-yellow-400/10">
           Join Now
         </a>
       </div>
@@ -111,4 +114,69 @@ import { Dumbbell, Menu, X } from '@lucide/astro';
       }
     }
   });
+
+  // Active nav link tracking with Intersection Observer
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('#desktop-nav .nav-link');
+  const mobileNavLinks = document.querySelectorAll('#mobile-menu a[href^="#"]');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '-20% 0px -60% 0px',
+    threshold: 0,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        
+        // Update desktop nav
+        navLinks.forEach((link) => {
+          link.classList.remove('nav-active');
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('nav-active');
+          }
+        });
+
+        // Update mobile nav
+        mobileNavLinks.forEach((link) => {
+          link.classList.remove('text-yellow-400', 'bg-zinc-900');
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('text-yellow-400', 'bg-zinc-900');
+          }
+        });
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach((section) => observer.observe(section));
 </script>
+
+<style>
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #facc15, transparent);
+    border-radius: 999px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 60%;
+  }
+
+  .nav-link.nav-active {
+    color: #facc15;
+  }
+
+  .nav-link.nav-active::after {
+    width: 100%;
+    box-shadow: 0 0 8px rgba(250, 204, 21, 0.5), 0 0 16px rgba(250, 204, 21, 0.2);
+  }
+</style>
