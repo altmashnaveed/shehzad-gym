@@ -246,10 +246,12 @@ const reviews = [
 				</p>
 			</div>
 
-			<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+			<!-- Row 1: Coach Section (Split Layout) -->
+			<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-20">
+				
 				<!-- Left Column: Coach's Achievements -->
-				<div class="lg:col-span-6 space-y-8">
-					<h3 class="text-xl sm:text-2xl font-black text-white uppercase tracking-tight border-l-4 border-yellow-400 pl-4">
+				<div class="lg:col-span-6 space-y-6">
+					<h3 class="text-xl sm:text-2xl font-black text-white uppercase tracking-tight border-l-4 border-yellow-400 pl-4 mb-6">
 						Coach Achievements
 					</h3>
 					
@@ -304,140 +306,151 @@ const reviews = [
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<!-- Certificates Subsection -->
-					<div class="pt-6 space-y-6">
-						<h4 class="text-sm font-bold text-zinc-400 uppercase tracking-widest">
-							Professional Credentials
-						</h4>
-						
-						<!-- Realistic Certificate Cards -->
-						<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+				<!-- Right Column: Professional Credentials -->
+				<div class="lg:col-span-6 space-y-6">
+					<h3 class="text-xl sm:text-2xl font-black text-white uppercase tracking-tight border-l-4 border-yellow-400 pl-4 mb-6">
+						Professional Credentials
+					</h3>
+					
+					<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+						<!-- Certificate 1 -->
+						<div class="relative p-3 rounded-2xl bg-zinc-950 border border-zinc-800 hover:border-yellow-400/30 transition-all duration-300 group flex flex-col justify-between overflow-hidden shadow-xl">
+							<div class="absolute inset-2 border border-yellow-400/10 rounded-xl pointer-events-none group-hover:border-yellow-400/20 transition-colors"></div>
 							
-							<!-- Certificate 1 -->
-							<div class="relative p-3 rounded-2xl bg-zinc-950 border border-zinc-800 hover:border-yellow-400/30 transition-all duration-300 group flex flex-col justify-between overflow-hidden shadow-xl">
-								<!-- Certificate Inner Border Line -->
-								<div class="absolute inset-2 border border-yellow-400/10 rounded-xl pointer-events-none group-hover:border-yellow-400/20 transition-colors"></div>
-								
-								<div class="relative z-10 overflow-hidden rounded-xl aspect-[3/4] bg-zinc-900/60 border border-zinc-800 flex items-center justify-center cursor-pointer">
-									<img src="/certificate-1.jpg" alt="Malik Shahzad Ahmad - PSCA Level-III Certified Certificate of Achievement" class="w-full h-full object-contain object-center group-hover:scale-[1.03] transition-transform duration-300 lightbox-trigger" />
-									<!-- Magnifying glass overlay -->
-									<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 pointer-events-none">
-										<svg class="w-8 h-8 text-yellow-400 drop-shadow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" /></svg>
-									</div>
-								</div>
-								
-								<div class="p-3 text-center relative z-10">
-									<span class="text-[10px] font-bold text-yellow-400 uppercase tracking-widest">PSCA Level-III Certified</span>
-									<h5 class="text-white font-black text-sm uppercase leading-tight mt-1">Strength & Conditioning</h5>
+							<div class="relative z-10 overflow-hidden rounded-xl aspect-[3/4] bg-zinc-900/60 border border-zinc-800 flex items-center justify-center cursor-pointer">
+								<img src="/certificate-1.jpg" alt="Malik Shahzad Ahmad - PSCA Level-III Certified Certificate of Achievement" class="w-full h-full object-contain object-center group-hover:scale-[1.03] transition-transform duration-300 lightbox-trigger" />
+								<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 pointer-events-none">
+									<svg class="w-8 h-8 text-yellow-400 drop-shadow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" /></svg>
 								</div>
 							</div>
+							
+							<div class="p-3 text-center relative z-10">
+								<span class="text-[10px] font-bold text-yellow-400 uppercase tracking-widest">PSCA Level-III Certified</span>
+								<h5 class="text-white font-black text-xs uppercase leading-tight mt-1">Strength & Conditioning</h5>
+							</div>
+						</div>
 
-							<!-- Certificate 2 -->
-							<div class="relative p-3 rounded-2xl bg-zinc-950 border border-zinc-800 hover:border-yellow-400/30 transition-all duration-300 group flex flex-col justify-between overflow-hidden shadow-xl">
-								<!-- Certificate Inner Border Line -->
-								<div class="absolute inset-2 border border-yellow-400/10 rounded-xl pointer-events-none group-hover:border-yellow-400/20 transition-colors"></div>
-								
-								<div class="relative z-10 overflow-hidden rounded-xl aspect-[3/4] bg-zinc-900/60 border border-zinc-800 flex items-center justify-center cursor-pointer">
-									<img src="/certificate-2.jpg" alt="Malik Shehzad Ahmad - PSCA Level-II Gym Management and Master Training" class="w-full h-full object-contain object-center group-hover:scale-[1.03] transition-transform duration-300 lightbox-trigger" />
-									<!-- Magnifying glass overlay -->
-									<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 pointer-events-none">
-										<svg class="w-8 h-8 text-yellow-400 drop-shadow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" /></svg>
-									</div>
-								</div>
-								
-								<div class="p-3 text-center relative z-10">
-									<span class="text-[10px] font-bold text-yellow-400 uppercase tracking-widest">PSCA Level-II Gym Management</span>
-									<h5 class="text-white font-black text-sm uppercase leading-tight mt-1">Gym Management & Master Training</h5>
+						<!-- Certificate 2 -->
+						<div class="relative p-3 rounded-2xl bg-zinc-950 border border-zinc-800 hover:border-yellow-400/30 transition-all duration-300 group flex flex-col justify-between overflow-hidden shadow-xl">
+							<div class="absolute inset-2 border border-yellow-400/10 rounded-xl pointer-events-none group-hover:border-yellow-400/20 transition-colors"></div>
+							
+							<div class="relative z-10 overflow-hidden rounded-xl aspect-[3/4] bg-zinc-900/60 border border-zinc-800 flex items-center justify-center cursor-pointer">
+								<img src="/certificate-2.jpg" alt="Malik Shehzad Ahmad - PSCA Level-II Gym Management and Master Training" class="w-full h-full object-contain object-center group-hover:scale-[1.03] transition-transform duration-300 lightbox-trigger" />
+								<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 pointer-events-none">
+									<svg class="w-8 h-8 text-yellow-400 drop-shadow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" /></svg>
 								</div>
 							</div>
-
+							
+							<div class="p-3 text-center relative z-10">
+								<span class="text-[10px] font-bold text-yellow-400 uppercase tracking-widest">PSCA Level-II Gym Management</span>
+								<h5 class="text-white font-black text-xs uppercase leading-tight mt-1">Gym Management & Master Training</h5>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<!-- Right Column: Student Champions -->
-				<div class="lg:col-span-6 space-y-8">
-					<h3 class="text-xl sm:text-2xl font-black text-white uppercase tracking-tight border-l-4 border-yellow-400 pl-4">
-						Student Champions
-					</h3>
-					
-					<div class="space-y-4">
-						
-						<!-- Student 1 -->
-						<div class="flex flex-col sm:flex-row items-center gap-5 p-5 rounded-3xl bg-zinc-900/40 border border-zinc-800/80 hover:border-yellow-400/20 transition-all group relative overflow-hidden">
-							<!-- Trophy Icon Overlay background -->
-							<div class="absolute right-4 bottom-4 text-zinc-800/10 pointer-events-none group-hover:text-yellow-400/5 transition-colors">
-								<svg class="w-20 h-20" fill="currentColor" viewBox="0 0 24 24"><path d="M18 9H19.5c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5H18V9m-12 0h12V4H6v5m-3.5-2.5C1.12 6.5 0 7.62 0 9s1.12 2.5 2.5 2.5H4V9H2.5M20 22H4v-2h6v-2.3c-2.3-.4-4-2.4-4-4.7V11h12v2c0 2.3-1.7 4.3-4 4.7V20h6v2z"/></svg>
-							</div>
+			</div>
 
-							<div class="w-24 h-24 rounded-2xl overflow-hidden bg-zinc-950 shrink-0 border border-zinc-800 group-hover:border-yellow-400/30 transition-colors">
-								<img src="/bilal.png" alt="Bilal - Student Champion" class="w-full h-full object-cover object-top filter grayscale contrast-110 group-hover:scale-105 transition-transform duration-300" />
+			<!-- Row 2: Student Champions (3-Column Symmetrical Grid Layout) -->
+			<div class="pt-8 border-t border-zinc-900/80">
+				<h3 class="text-xl sm:text-2xl font-black text-white uppercase tracking-tight border-l-4 border-yellow-400 pl-4 mb-8 text-center sm:text-left">
+					Student Champions
+				</h3>
+				
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					
+					<!-- Student 1 -->
+					<div class="rounded-3xl bg-zinc-900/40 border border-zinc-800/80 hover:border-yellow-400/20 hover:shadow-xl hover:shadow-yellow-400/5 transition-all duration-300 group overflow-hidden flex flex-col justify-between relative">
+						<!-- Background watermark -->
+						<div class="absolute right-4 bottom-4 text-zinc-800/5 pointer-events-none group-hover:text-yellow-400/5 transition-colors">
+							<svg class="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M18 9H19.5c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5H18V9m-12 0h12V4H6v5m-3.5-2.5C1.12 6.5 0 7.62 0 9s1.12 2.5 2.5 2.5H4V9H2.5M20 22H4v-2h6v-2.3c-2.3-.4-4-2.4-4-4.7V11h12v2c0 2.3-1.7 4.3-4 4.7V20h6v2z"/></svg>
+						</div>
+
+						<div>
+							<!-- Portrait image container -->
+							<div class="w-full aspect-[4/5] overflow-hidden bg-zinc-950 border-b border-zinc-800/60">
+								<img src="/bilal.png" alt="Bilal - Student Champion" class="w-full h-full object-cover object-center filter grayscale contrast-115 group-hover:scale-[1.03] transition-transform duration-300 group-hover:filter-none" />
 							</div>
-							<div class="text-center sm:text-left relative z-10 flex-grow">
-								<div class="flex flex-col sm:flex-row sm:items-center gap-2">
-									<h4 class="text-white font-extrabold text-lg uppercase leading-tight">Bilal</h4>
-									<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-yellow-400/10 text-yellow-400 text-[10px] font-black uppercase tracking-wider w-fit mx-auto sm:mx-0">
+							
+							<!-- Content details -->
+							<div class="p-6 relative z-10 space-y-2">
+								<div class="flex items-center justify-between gap-2">
+									<h4 class="text-white font-black text-xl uppercase leading-tight">Bilal</h4>
+									<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-yellow-400/10 text-yellow-400 text-[10px] font-black uppercase tracking-wider">
 										🏆 Gold Title
 									</span>
 								</div>
-								<p class="text-zinc-400 text-sm mt-2 font-medium">Mr. Sargodha Division Winner</p>
-								<p class="text-zinc-500 text-xs mt-0.5">Champions Class of 2022</p>
+								<p class="text-zinc-400 text-sm font-medium">Mr. Sargodha Division Winner</p>
+								<p class="text-zinc-500 text-xs">Class of 2022</p>
 							</div>
 						</div>
+					</div>
 
-						<!-- Student 2 -->
-						<div class="flex flex-col sm:flex-row items-center gap-5 p-5 rounded-3xl bg-zinc-900/40 border border-zinc-800/80 hover:border-yellow-400/20 transition-all group relative overflow-hidden">
-							<!-- Trophy Icon Overlay background -->
-							<div class="absolute right-4 bottom-4 text-zinc-800/10 pointer-events-none group-hover:text-yellow-400/5 transition-colors">
-								<svg class="w-20 h-20" fill="currentColor" viewBox="0 0 24 24"><path d="M18 9H19.5c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5H18V9m-12 0h12V4H6v5m-3.5-2.5C1.12 6.5 0 7.62 0 9s1.12 2.5 2.5 2.5H4V9H2.5M20 22H4v-2h6v-2.3c-2.3-.4-4-2.4-4-4.7V11h12v2c0 2.3-1.7 4.3-4 4.7V20h6v2z"/></svg>
-							</div>
+					<!-- Student 2 -->
+					<div class="rounded-3xl bg-zinc-900/40 border border-zinc-800/80 hover:border-yellow-400/20 hover:shadow-xl hover:shadow-yellow-400/5 transition-all duration-300 group overflow-hidden flex flex-col justify-between relative">
+						<!-- Background watermark -->
+						<div class="absolute right-4 bottom-4 text-zinc-800/5 pointer-events-none group-hover:text-yellow-400/5 transition-colors">
+							<svg class="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M18 9H19.5c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5H18V9m-12 0h12V4H6v5m-3.5-2.5C1.12 6.5 0 7.62 0 9s1.12 2.5 2.5 2.5H4V9H2.5M20 22H4v-2h6v-2.3c-2.3-.4-4-2.4-4-4.7V11h12v2c0 2.3-1.7 4.3-4 4.7V20h6v2z"/></svg>
+						</div>
 
-							<div class="w-24 h-24 rounded-2xl overflow-hidden bg-zinc-950 shrink-0 border border-zinc-800 group-hover:border-yellow-400/30 transition-colors">
-								<img src="/arslan-sunny.png" alt="Arslan Sunny - Student Champion" class="w-full h-full object-cover object-top filter grayscale contrast-110 group-hover:scale-105 transition-transform duration-300" />
+						<div>
+							<!-- Portrait image container -->
+							<div class="w-full aspect-[4/5] overflow-hidden bg-zinc-950 border-b border-zinc-800/60">
+								<img src="/arslan-sunny.png" alt="Arslan Sunny - Student Champion" class="w-full h-full object-cover object-center filter grayscale contrast-115 group-hover:scale-[1.03] transition-transform duration-300 group-hover:filter-none" />
 							</div>
-							<div class="text-center sm:text-left relative z-10 flex-grow">
-								<div class="flex flex-col sm:flex-row sm:items-center gap-2">
-									<h4 class="text-white font-extrabold text-lg uppercase leading-tight">Arslan Sunny</h4>
-									<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-yellow-400/10 text-yellow-400 text-[10px] font-black uppercase tracking-wider w-fit mx-auto sm:mx-0">
+							
+							<!-- Content details -->
+							<div class="p-6 relative z-10 space-y-2">
+								<div class="flex items-center justify-between gap-2">
+									<h4 class="text-white font-black text-xl uppercase leading-tight">Arslan Sunny</h4>
+									<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-yellow-400/10 text-yellow-400 text-[10px] font-black uppercase tracking-wider">
 										🏆 Class Winner
 									</span>
 								</div>
-								<p class="text-zinc-400 text-sm mt-2 font-medium">Mr. Sargodha Senior Class Champion</p>
-								<p class="text-zinc-500 text-xs mt-0.5">Champions Class of 2022</p>
+								<p class="text-zinc-400 text-sm font-medium">Mr. Sargodha Senior Class Champion</p>
+								<p class="text-zinc-500 text-xs">Class of 2022</p>
 							</div>
 						</div>
+					</div>
 
-						<!-- Student 3 -->
-						<div class="flex flex-col sm:flex-row items-center gap-5 p-5 rounded-3xl bg-zinc-900/40 border border-zinc-800/80 hover:border-yellow-400/20 transition-all group relative overflow-hidden">
-							<!-- Trophy Icon Overlay background -->
-							<div class="absolute right-4 bottom-4 text-zinc-800/10 pointer-events-none group-hover:text-yellow-400/5 transition-colors">
-								<svg class="w-20 h-20" fill="currentColor" viewBox="0 0 24 24"><path d="M18 9H19.5c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5H18V9m-12 0h12V4H6v5m-3.5-2.5C1.12 6.5 0 7.62 0 9s1.12 2.5 2.5 2.5H4V9H2.5M20 22H4v-2h6v-2.3c-2.3-.4-4-2.4-4-4.7V11h12v2c0 2.3-1.7 4.3-4 4.7V20h6v2z"/></svg>
-							</div>
+					<!-- Student 3 -->
+					<div class="rounded-3xl bg-zinc-900/40 border border-zinc-800/80 hover:border-yellow-400/20 hover:shadow-xl hover:shadow-yellow-400/5 transition-all duration-300 group overflow-hidden flex flex-col justify-between relative">
+						<!-- Background watermark -->
+						<div class="absolute right-4 bottom-4 text-zinc-800/5 pointer-events-none group-hover:text-yellow-400/5 transition-colors">
+							<svg class="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M18 9H19.5c1.38 0 2.5-1.12 2.5-2.5s-1.12-2.5-2.5-2.5H18V9m-12 0h12V4H6v5m-3.5-2.5C1.12 6.5 0 7.62 0 9s1.12 2.5 2.5 2.5H4V9H2.5M20 22H4v-2h6v-2.3c-2.3-.4-4-2.4-4-4.7V11h12v2c0 2.3-1.7 4.3-4 4.7V20h6v2z"/></svg>
+						</div>
 
-							<div class="w-24 h-24 rounded-2xl overflow-hidden bg-zinc-950 shrink-0 border border-zinc-800 group-hover:border-yellow-400/30 transition-colors">
-								<img src="/talha-zahid.png" alt="Talha Zahid - Student Champion" class="w-full h-full object-cover object-top filter grayscale contrast-110 group-hover:scale-105 transition-transform duration-300" />
+						<div>
+							<!-- Portrait image container -->
+							<div class="w-full aspect-[4/5] overflow-hidden bg-zinc-950 border-b border-zinc-800/60">
+								<img src="/talha-zahid.png" alt="Talha Zahid - Student Champion" class="w-full h-full object-cover object-center filter grayscale contrast-115 group-hover:scale-[1.03] transition-transform duration-300 group-hover:filter-none" />
 							</div>
-							<div class="text-center sm:text-left relative z-10 flex-grow">
-								<div class="flex flex-col sm:flex-row sm:items-center gap-2">
-									<h4 class="text-white font-extrabold text-lg uppercase leading-tight">Talha Zahid</h4>
-									<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-yellow-400/10 text-yellow-400 text-[10px] font-black uppercase tracking-wider w-fit mx-auto sm:mx-0">
+							
+							<!-- Content details -->
+							<div class="p-6 relative z-10 space-y-2">
+								<div class="flex items-center justify-between gap-2">
+									<h4 class="text-white font-black text-xl uppercase leading-tight">Talha Zahid</h4>
+									<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-yellow-400/10 text-yellow-400 text-[10px] font-black uppercase tracking-wider">
 										🏆 Multi-Champ
 									</span>
 								</div>
-								<div class="mt-2 space-y-1">
-									<p class="text-zinc-400 text-sm font-medium">Mr. Sargodha Junior Class Winner (2022)</p>
-									<p class="text-zinc-400 text-sm font-medium flex items-center justify-center sm:justify-start gap-1">
+								<div class="space-y-1">
+									<p class="text-zinc-400 text-sm font-medium">Mr. Sargodha Junior Class Winner</p>
+									<p class="text-zinc-500 text-xs flex items-center gap-1">
 										<!-- Arm Wrestling Mini SVG -->
 										<svg class="w-3.5 h-3.5 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 20c1-3.5 3-6.5 6-6.5h6c3 0 5 3 6 6.5m-12-10 3-3 3 3m-3-3v6.5"/></svg>
-										Mr. Arm Wrestler Gym Champion (2022–2026)
+										Mr. Arm Wrestler Gym Winner (2022–2026)
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
+
 		</div>
 	</section>
 
