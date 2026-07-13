@@ -247,16 +247,18 @@ const reviews = [
 			</div>
 
 			<!-- Row 1: Coach Section (Split Layout) -->
-			<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-20">
+			<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch mb-20">
 				
 				<!-- Left Column: Coach's Achievements -->
-				<div class="lg:col-span-6 space-y-6">
-					<h3 class="text-xl sm:text-2xl font-black text-white uppercase tracking-tight border-l-4 border-yellow-400 pl-4 mb-6">
-						Coach Achievements
-					</h3>
+				<div class="lg:col-span-6 flex flex-col justify-between h-full">
+					<div>
+						<h3 class="text-xl sm:text-2xl font-black text-white uppercase tracking-tight border-l-4 border-yellow-400 pl-4 mb-6">
+							Coach Achievements
+						</h3>
+					</div>
 					
-					<div class="space-y-4">
-						<div class="flex items-center gap-4 p-5 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-yellow-400/20 transition-all group">
+					<div class="flex flex-col justify-between flex-grow gap-4">
+						<div class="flex items-center gap-4 p-5 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-yellow-400/20 transition-all group flex-grow">
 							<div class="w-12 h-12 rounded-xl bg-yellow-400/10 text-yellow-400 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
 								<!-- Gold Trophy SVG -->
 								<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
@@ -267,13 +269,18 @@ const reviews = [
 									<path d="M12 2a6 6 0 0 1 6 6v3.34a6 6 0 0 1-5.34 5.96L12 17.5l-.66-.2a6 6 0 0 1-5.34-5.96V8a6 6 0 0 1 6-6z" />
 								</svg>
 							</div>
-							<div>
-								<h4 class="text-white font-extrabold text-lg uppercase leading-tight">Mr. Sargodha Division</h4>
-								<p class="text-zinc-500 text-sm mt-1">Overall Division Champion · 2009</p>
+							<div class="flex-grow flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 w-full">
+								<div>
+									<h4 class="text-white font-extrabold text-lg uppercase leading-tight">Mr. Sargodha Division</h4>
+									<p class="text-zinc-500 text-sm mt-1">Overall Division Champion</p>
+								</div>
+								<span class="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-yellow-400/10 text-yellow-400 text-xs font-black uppercase tracking-wider shrink-0 w-fit">
+									Year 2009
+								</span>
 							</div>
 						</div>
 
-						<div class="flex items-center gap-4 p-5 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-yellow-400/20 transition-all group">
+						<div class="flex items-center gap-4 p-5 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-yellow-400/20 transition-all group flex-grow">
 							<div class="w-12 h-12 rounded-xl bg-yellow-400/10 text-yellow-400 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
 								<!-- Gold Trophy SVG -->
 								<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
@@ -284,13 +291,18 @@ const reviews = [
 									<path d="M12 2a6 6 0 0 1 6 6v3.34a6 6 0 0 1-5.34 5.96L12 17.5l-.66-.2a6 6 0 0 1-5.34-5.96V8a6 6 0 0 1 6-6z" />
 								</svg>
 							</div>
-							<div>
-								<h4 class="text-white font-extrabold text-lg uppercase leading-tight">3x Mr. Punjab Runner-up</h4>
-								<p class="text-zinc-500 text-sm mt-1">Punjab Bodybuilding Championship Runner-up · 2007, 2008, 2009</p>
+							<div class="flex-grow flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 w-full">
+								<div>
+									<h4 class="text-white font-extrabold text-lg uppercase leading-tight">3x Mr. Punjab Runner-up</h4>
+									<p class="text-zinc-500 text-sm mt-1">Punjab Bodybuilding Championship Runner-up</p>
+								</div>
+								<span class="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-yellow-400/10 text-yellow-400 text-xs font-black uppercase tracking-wider shrink-0 w-fit">
+									2007 - 2009
+								</span>
 							</div>
 						</div>
 
-						<div class="flex items-center gap-4 p-5 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-yellow-400/20 transition-all group">
+						<div class="flex items-center gap-4 p-5 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-yellow-400/20 transition-all group flex-grow">
 							<div class="w-12 h-12 rounded-xl bg-yellow-400/10 text-yellow-400 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
 								<!-- Arm Wrestling SVG -->
 								<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
@@ -300,9 +312,14 @@ const reviews = [
 									<circle cx="12" cy="4" r="1.5" />
 								</svg>
 							</div>
-							<div>
-								<h4 class="text-white font-extrabold text-lg uppercase leading-tight">Mr. Arm Wrestler Sargodha</h4>
-								<p class="text-zinc-500 text-sm mt-1">Arm Wrestling Champion · 2010</p>
+							<div class="flex-grow flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 w-full">
+								<div>
+									<h4 class="text-white font-extrabold text-lg uppercase leading-tight">Mr. Arm Wrestler Sargodha</h4>
+									<p class="text-zinc-500 text-sm mt-1">Arm Wrestling Champion</p>
+								</div>
+								<span class="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-yellow-400/10 text-yellow-400 text-xs font-black uppercase tracking-wider shrink-0 w-fit">
+									Year 2010
+								</span>
 							</div>
 						</div>
 					</div>
